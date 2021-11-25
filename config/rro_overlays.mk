@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
     BuiltInPrintServiceOverlay \
+    NavigationBarModeGesturalOverlayFS \
     GooglePermissionControllerOverlay \
     PixelConfigOverlayCommon \
     TeleServiceOverlay \
