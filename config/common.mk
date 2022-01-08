@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     DummyCutoutOverlay
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 # TouchGestures
 PRODUCT_PACKAGES += \
     TouchGestures
