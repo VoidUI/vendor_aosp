@@ -36,6 +36,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=none
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
+# App Lock permissions
+PRODUCT_COPY_FILES += \
+    vendor/aosp/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
+
 # Some permissions
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
