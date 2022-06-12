@@ -1,7 +1,7 @@
 # Branding
 $(call inherit-product, vendor/aosp/config/branding.mk)
 
-PRODUCT_BRAND ?= PixelExperience
+PRODUCT_BRAND ?= VoidUI
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy all custom init rc files
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init/init.pixelexperience-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.pixelexperience-updater.rc
+    vendor/aosp/prebuilt/common/etc/init/init.voidui-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.voidui-updater.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \

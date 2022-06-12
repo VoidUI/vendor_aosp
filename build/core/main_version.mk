@@ -20,8 +20,15 @@ endif
 
 # Versioning props
 ADDITIONAL_SYSTEM_PROPERTIES  += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
+    org.voidui.version=$(VoidUI_BASE_VERSION) \
+    org.voidui.version.display=$(CUSTOM_VERSION) \
+    org.voidui.build_date=$(CUSTOM_BUILD_DATE) \
+    org.voidui.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.voidui.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.voidui.codename=$(VoidUI_BASE_VERSION) \
+    org.voidui.build_version=$(VoidUI_BUILD_VERSION) \
+    ro.voidui.maintainer=$(VOID_MAINTAINER)
+
+# Additional Android 12L Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.voidui.settings.android_version=12L
