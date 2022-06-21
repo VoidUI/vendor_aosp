@@ -27,3 +27,7 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.voidui.build_type=$(CUSTOM_BUILD_TYPE) \
     org.voidui.codename=$(VoidUI_BASE_VERSION) \
     ro.voidui.maintainer=$(VOID_MAINTAINER)
+
+# Additional Android 12L Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.voidui.settings.android_version=12L
