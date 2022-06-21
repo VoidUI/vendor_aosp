@@ -34,3 +34,7 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
 # Custom Security Patch
 ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.pixelexperience.build_security_patch=$(CUSTOM_SECURITY_PATCH)
+
+# Additional Android 12L Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.voidui.settings.android_version=12L
