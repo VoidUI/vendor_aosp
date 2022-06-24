@@ -2,7 +2,7 @@
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 # VoidUI Props
-VoidUI_BASE_VERSION = Supernova
+VoidUI_BASE_VERSION = Weekly
 
 # Time Related
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
