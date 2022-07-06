@@ -2,7 +2,7 @@
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 # VoidUI Props
-VoidUI_BASE_VERSION = Eternity
+VoidUI_BASE_VERSION = Darkness
 
 # Time Related
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
