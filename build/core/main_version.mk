@@ -29,6 +29,7 @@ ADDITIONAL_SYSTEM_PROPERTIES  += \
     org.voidui.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
     org.voidui.build_type=$(CUSTOM_BUILD_TYPE) \
     org.voidui.codename=$(VoidUI_BASE_VERSION) \
+    org.voidui.build_version=$(VoidUI_BUILD_VERSION) \
     ro.voidui.maintainer=$(VOID_MAINTAINER)
 
 # Custom Security Patch
