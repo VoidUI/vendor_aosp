@@ -33,6 +33,7 @@ SOONG_CONFIG_customGlobalVars += \
     has_legacy_camera_hal1 \
     has_memfd_backport \
     ignores_ftp_pptp_conntrack_failure \
+    gralloc_handle_has_reserved_size \
     needs_camera_boottime \
     needs_netd_direct_connect_rule \
     target_init_vendor_lib \
@@ -85,10 +86,12 @@ SOONG_CONFIG_customQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_
 SOONG_CONFIG_customQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_customQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_customGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_FBDEV)
+SOONG_CONFIG_customGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
