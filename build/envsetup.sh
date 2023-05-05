@@ -286,11 +286,7 @@ function githubremote()
         return 1
     fi
     git remote rm github 2> /dev/null
-    local REMOTE=$(git config --get remote.pixel-plus.projectname)
-    if [ -z "$REMOTE" ]
-    then
-        local REMOTE=$(git config --get remote.pixel.projectname)
-    fi
+    local REMOTE=$(git config --get remote.pixel.projectname)
 
     local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
@@ -401,18 +397,9 @@ function pixelgerrit() {
         return 1
     fi
     local user=`git config --get review.gerrit.pixelexperience.org.username`
-    local review=`git config --get remote.pixel-plus.review`
-    local remote_branch=twelve-plus
-    if [ -z "$review" ]
-    then
-        local review=`git config --get remote.pixel.review`
-    fi
-    local project=`git config --get remote.pixel-plus.projectname`
-    if [ -z "$project" ]
-    then
-        local project=`git config --get remote.pixel.projectname`
-        local remote_branch=twelve
-    fi
+    local review=`git config --get remote.pixel.review`
+    local project=`git config --get remote.pixel.projectname`
+    local remote_branch=twelve
     local command=$1
     shift
     case $command in
@@ -653,11 +640,7 @@ function pixelrebase() {
         return
     fi
     cd $dir
-    repo=$(git config --get remote.pixel-plus.projectname)
-    if [ -z "$repo" ]
-    then
-        repo=$(git config --get remote.pixel.projectname)
-    fi
+    repo=$(git config --get remote.pixel.projectname)
     echo "Starting branch..."
     repo start tmprebase .
     echo "Bringing it up to date..."
